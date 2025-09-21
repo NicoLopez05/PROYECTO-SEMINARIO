@@ -13,6 +13,8 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.56.0",
     "@tailwindcss/vite": "^4.1.12",
+    "@tensorflow-models/speech-commands": "^0.5.4",
+    "@tensorflow/tfjs": "^4.22.0",
     "better-sqlite3": "^12.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",

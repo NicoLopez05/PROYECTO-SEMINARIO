@@ -1,7 +1,7 @@
 //MIAU
-// import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as Tone from "tone";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 // ⬇️ NUEVO: helpers para local y nube
 import { getDeviceId } from "../lib/device";
