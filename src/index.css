@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { @apply m-0 bg-[#545454] text-gray-100; } /* <- sin margen y con fondo gris */
+}
