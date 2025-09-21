@@ -17,111 +17,119 @@ const TOPICS: { key: TopicKey; title: string }[] = [
 
 const CONTENT: Record<TopicKey, Record<Level, { intro: string; bullets: string[]; tips?: string[] }>> = {
   acordes: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Empieza con triadas abiertas y progresiones I–IV–V.",
       bullets: ["C, G, D, Em, Am", "Cambio limpio entre acordes", "Progresión 12 compases (blues)"],
-      tips: ["Practica con metrónomo a 60–80 BPM", "Muteo con mano izquierda para limpiar"]
+      tips: ["Practica con metrónomo a 60–80 BPM", "Muteo con mano izquierda para limpiar"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Aumenta tu vocabulario con cejillas y inversiones.",
       bullets: ["Cejilla en E/A shape", "Inversiones triada en 3 cuerdas", "Dominantes secundarios"],
-      tips: ["Arpegia con patrón 1–5–3–5", "Usa capotraste para transportar"]
+      tips: ["Arpegia con patrón 1–5–3–5", "Usa capotraste para transportar"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Colorea con tensiones y voicings drop-2/4.",
       bullets: ["Maj7, m7, 7(9,13), m7b5", "Drop-2 en cuerdas 2–5", "Cadencias II–V–I con extensiones"],
-      tips: ["Voice-leading entre acordes", "Sustituciones tritono"]
-    }
+      tips: ["Voice-leading entre acordes", "Sustituciones tritono"],
+    },
   },
   escalas: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Pentatónica menor y mayor: base para solos sencillos.",
       bullets: ["Box 1 en 5º traste", "Mayor vs menor (relativas)", "Licks de 2 compases"],
-      tips: ["Frasea en 4 compases", "Call & response"]
+      tips: ["Frasea en 4 compases", "Call & response"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Mayor natural (modo jónico) y dórico para funk/rock.",
       bullets: ["3NPS mayor", "Dórico sobre II", "Conectar posiciones"],
-      tips: ["Accentúa tiempos 2 y 4", "Chromatic approach notes"]
+      tips: ["Accentúa tiempos 2 y 4", "Chromatic approach notes"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Armoniza modos y aplica melódica menor.",
       bullets: ["Lidio/ mixolidio", "Melódica menor sobre V7alt", "Superimposición triadas"],
-      tips: ["Tensiones 9/#11/13", "Enclosures bebop"]
-    }
+      tips: ["Tensiones 9/#11/13", "Enclosures bebop"],
+    },
   },
   ritmo: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Rasgueos y patrones regulares.",
       bullets: ["Down/Up 4/4", "Palm mute básico", "Ghost strums"],
-      tips: ["Metrónomo 70–90 BPM", "Divide en compases"]
+      tips: ["Metrónomo 70–90 BPM", "Divide en compases"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Síncopas y contratiempos.",
       bullets: ["Patrones 16ths", "Anticipaciones", "Funk chucks"],
-      tips: ["Subdivision cuenta 1e&a", "Loop 2 compases"]
+      tips: ["Subdivision cuenta 1e&a", "Loop 2 compases"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Polirritmias y métricas impares.",
       bullets: ["3 sobre 4", "7/8 groove", "Hemiolas"],
-      tips: ["Claves rítmicas", "Accent displacement"]
-    }
+      tips: ["Claves rítmicas", "Accent displacement"],
+    },
   },
   tecnicas: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Construye control y limpieza.",
       bullets: ["Hammer-on / Pull-off", "Slides", "Vibrato básico"],
-      tips: ["Economy of motion", "Apagar cuerdas no usadas"]
+      tips: ["Economy of motion", "Apagar cuerdas no usadas"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Expande articulaciones y precisión.",
       bullets: ["Bends 1/2 y tono", "Alternate picking", "Tapping básico"],
-      tips: ["Intonación con afinador", "Sincronía mano izq/der"]
+      tips: ["Intonación con afinador", "Sincronía mano izq/der"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Velocidad y textura avanzada.",
       bullets: ["Sweep picking 3–5 cuerdas", "Hybrid picking", "Legato extendido"],
-      tips: ["Rutinas por grupos de 3/5", "Estrategias de relajación"]
-    }
+      tips: ["Rutinas por grupos de 3/5", "Estrategias de relajación"],
+    },
   },
   generos: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Estructuras simples para tocar canciones.",
       bullets: ["Pop I–V–vi–IV", "Rock power chords", "Balada arpegios"],
-      tips: ["Escucha referencias", "Toca encima de backing tracks"]
+      tips: ["Escucha referencias", "Toca encima de backing tracks"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Lenguajes característicos.",
       bullets: ["Funk 9ths & 13ths", "Blues 12 compases", "Rock riffing pentatónica"],
-      tips: ["Tono de mano derecha", "Compases con acentos"]
+      tips: ["Tono de mano derecha", "Compases con acentos"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Fusión de estilos y reharmonización.",
       bullets: ["Jazz II–V–I extendido", "Metal alternate rápido", "Latin bossa/samba patterns"],
-      tips: ["Sustituciones", "Modulaciones breves"]
-    }
+      tips: ["Sustituciones", "Modulaciones breves"],
+    },
   },
   lectura: {
-    "BÁSICO": {
+    BÁSICO: {
       intro: "Tablatura y ritmo básico.",
       bullets: ["Leer TAB en 1–5 trastes", "Figuras (negra, corchea)", "Simplificar compases"],
-      tips: ["Marca golpes de púa", "Lento → rápido"]
+      tips: ["Marca golpes de púa", "Lento → rápido"],
     },
-    "INTERMEDIO": {
+    INTERMEDIO: {
       intro: "Partitura y posiciones.",
       bullets: ["Clave de sol 1ª posición", "Cifrado americano", "Clic + lectura a primera vista"],
-      tips: ["Solfeo práctico", "Diccionario de símbolos"]
+      tips: ["Solfeo práctico", "Diccionario de símbolos"],
     },
-    "AVANZADO": {
+    AVANZADO: {
       intro: "Lectura funcional y de sesión.",
       bullets: ["Lead sheets", "Charts Nashville", "Cambios rápidos"],
-      tips: ["Anotar cues", "Agrupar por frases"]
-    }
-  }
+      tips: ["Anotar cues", "Agrupar por frases"],
+    },
+  },
 };
 
 const isLevel = (v: any): v is Level =>
   v === "BÁSICO" || v === "INTERMEDIO" || v === "AVANZADO";
+
+/** Ruta final para cada topic (por ahora sólo “acordes” existe como página detallada) */
+function routeForTopic(t: TopicKey) {
+  if (t === "acordes") return "/guitarra/acordes";
+  // si luego creas más páginas detalladas, mapea aquí:
+  // if (t === "escalas") return "/guitarra/escalas";
+  return `/guitarra/${t}`; // fallback semántico
+}
 
 export default function Guitarra() {
   const navigate = useNavigate();
@@ -129,11 +137,13 @@ export default function Guitarra() {
   const [showLevelModal, setShowLevelModal] = useState(false);
   const [openTopic, setOpenTopic] = useState<TopicKey | null>(null);
 
-  // Cargar nivel desde Supabase (si hay sesión) o localStorage como fallback
+  // Cargar nivel desde Supabase o localStorage
   useEffect(() => {
     (async () => {
       try {
-        const { data: { user } } = await supabase.auth.getUser();
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
         if (user) {
           const { data: row, error } = await supabase
             .from("user_settings")
@@ -146,7 +156,6 @@ export default function Guitarra() {
             return;
           }
         }
-        // Fallback a localStorage
         const stored = localStorage.getItem("guitar.level");
         if (isLevel(stored)) {
           setLevel(stored);
@@ -155,7 +164,6 @@ export default function Guitarra() {
           setShowLevelModal(true);
         }
       } catch {
-        // Si falla Supabase por cualquier motivo, usa localStorage
         const stored = localStorage.getItem("guitar.level");
         if (isLevel(stored)) {
           setLevel(stored);
@@ -167,14 +175,12 @@ export default function Guitarra() {
     })();
   }, []);
 
-  // ---- NUEVO: guardar nivel en Supabase o localStorage
   async function chooseLevelDB(l: Level) {
     try {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
         localStorage.setItem("guitar.level", l);
       } else {
-        // crea perfil si no existe (id = auth.user.id)
         await supabase.from("profiles").upsert({ id: user.id }, { onConflict: "id" });
         await supabase.from("user_settings").upsert({
           user_id: user.id,
@@ -185,7 +191,6 @@ export default function Guitarra() {
       setLevel(l);
       setShowLevelModal(false);
     } catch {
-      // fallback
       localStorage.setItem("guitar.level", l);
       setLevel(l);
       setShowLevelModal(false);
@@ -247,9 +252,9 @@ export default function Guitarra() {
               <div
                 className="absolute inset-0 -z-10 opacity-15"
                 style={{
-                  /* FIX del typo en linear-gradient: coma correcta entre los dos rgba */
                   backgroundImage: `linear-gradient(to bottom, rgba(31,31,31,0.35), rgba(35,35,35,0)), url('${BG_URL}')`,
-                  backgroundSize: "cover", backgroundPosition: "center"
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
               <div className="h-full flex flex-col items-center justify-center">
@@ -266,11 +271,12 @@ export default function Guitarra() {
       {showLevelModal && (
         <SmallModal onClose={() => setShowLevelModal(false)} title="¿Cuál es tu nivel?">
           <div className="grid grid-cols-3 gap-3">
-            {(["BÁSICO","INTERMEDIO","AVANZADO"] as Level[]).map((l) => (
+            {(["BÁSICO", "INTERMEDIO", "AVANZADO"] as Level[]).map((l) => (
               <button
                 key={l}
-                onClick={() => { /* versión con DB */ chooseLevelDB(l); }}
-
+                onClick={() => {
+                  chooseLevelDB(l);
+                }}
                 className="rounded-xl bg-[#b2ec3a] px-3 py-2 text-black font-bold hover:brightness-95"
               >
                 {l}
@@ -298,10 +304,18 @@ export default function Guitarra() {
 /* ----------------- Modales & helpers ----------------- */
 
 function SmallModal({
-  title, onClose, children,
-}: { title: string; onClose: () => void; children: React.ReactNode }) {
+  title,
+  onClose,
+  children,
+}: {
+  title: string;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
@@ -312,7 +326,9 @@ function SmallModal({
       <div className="relative w-[92%] max-w-md rounded-2xl border-2 border-[#b2ec3a] bg-[#545454] p-5 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
           <h4 className="text-lg font-bold text-black">{title}</h4>
-          <button onClick={onClose} className="p-2 rounded-lg hover:bg-black/10" title="Cerrar">✕</button>
+          <button onClick={onClose} className="p-2 rounded-lg hover:bg-black/10" title="Cerrar">
+            ✕
+          </button>
         </div>
         {children}
       </div>
@@ -321,9 +337,29 @@ function SmallModal({
 }
 
 function GuideModal({
-  topic, level, onClose,
-}: { topic: TopicKey; level: Level; onClose: () => void }) {
+  topic,  level,  onClose,
+}: {
+  topic: TopicKey;  level: Level;
+  onClose: () => void;
+}) {
+  const navigate = useNavigate();
   const data = CONTENT[topic][level];
+  const topicRoute: Record<TopicKey, string> = {
+    acordes:  "/guitarra/acordes",
+    escalas:  "/guitarra/escalas",
+    ritmo:    "/guitarra/ritmo",
+    tecnicas: "/guitarra/tecnicas",
+    generos:  "/guitarra/generos",
+    lectura:  "/guitarra/lectura",
+  };
+
+
+   const goToLesson = () => {
+    const path = topicRoute[topic];
+    onClose();             // opcional: cierra el modal
+    navigate(path);        // navega
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
@@ -332,20 +368,26 @@ function GuideModal({
           <h4 className="text-xl font-bold text-black">
             {titleFor(topic)} · {level}
           </h4>
-          <button onClick={onClose} className="p-2 rounded-lg hover:bg-black/10" title="Cerrar">✕</button>
+          <button onClick={onClose} className="p-2 rounded-lg hover:bg-black/10" title="Cerrar">
+            ✕
+          </button>
         </div>
 
         <p className="text-sm text-white/90">{data.intro}</p>
 
         <ul className="mt-3 list-disc pl-6 space-y-1 text-sm">
-          {data.bullets.map((b, i) => <li key={i}>{b}</li>)}
+          {data.bullets.map((b, i) => (
+            <li key={i}>{b}</li>
+          ))}
         </ul>
 
         {data.tips && (
           <>
             <h5 className="mt-4 text-sm font-bold text-black">Tips:</h5>
             <ul className="list-disc pl-6 space-y-1 text-sm">
-              {data.tips.map((t, i) => <li key={i}>{t}</li>)}
+              {data.tips.map((t, i) => (
+                <li key={i}>{t}</li>
+              ))}
             </ul>
           </>
         )}
@@ -357,14 +399,15 @@ function GuideModal({
           >
             Cerrar
           </button>
-          <a
-            href="#"
+
+          {/* Botón funcional de navegación */}
+          <button
+            type="button"
+            onClick={goToLesson}
             className="rounded-xl bg-[#b2ec3a] px-4 py-2 text-black font-bold hover:brightness-95"
-            onClick={(e) => e.preventDefault()}
-            title="Placeholder para futuras rutas detalladas"
           >
             Ir a lección
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -372,7 +415,7 @@ function GuideModal({
 }
 
 function titleFor(t: TopicKey) {
-  return TOPICS.find(x => x.key === t)?.title ?? "";
+  return TOPICS.find((x) => x.key === t)?.title ?? "";
 }
 
 function ArrowLeftIcon({ className = "", size = 24 }: { className?: string; size?: number }) {
